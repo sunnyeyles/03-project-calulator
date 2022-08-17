@@ -14,12 +14,12 @@ class Calculator{
     
     //methods
     ratio(x, y, width){
-        //return: 'height is --- on ratio x:y'
-        //What the ratio height to width is, if x:y is 1:3 and width is 30 then the height is 10
+        const ratio = x / y
+        return `height is ${width / ratio} on ratio ${x}:${y}`
 
     }
     percentage(x, y){
-        return `${(x / 100) * y}%`
+        return `${(x / y) * 100}%`
     }
     add(x, y){
         return x + y
@@ -48,6 +48,5 @@ class Calculator{
 }
 const calcNew = new Calculator()
 
-// console.log(calcNew.elevate(6, 5))
-// console.log(calcNew.sqrt(144))
-console.log(calcNew.percentage(20, 100))
+
+
