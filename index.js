@@ -48,5 +48,19 @@ class Calculator{
 }
 const calcNew = new Calculator()
 
+// calculator logic
+
+const clearBtn = document.getElementById("clearBtn")
+const screen = document.querySelector("screen")
+// const screen = document.querySelector("screen")
+clearBtn.onclick = function(){
+    document.querySelector(".screen").textContent = ""
+}
+deleteBtn.onclick = function(){
+    document.querySelector(".screen").textContent = ""
+    // document.querySelector(".screen").textContent = ""
+    // string.replace('characterToReplace', '');
+}
+
 
 
