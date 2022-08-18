@@ -22,7 +22,7 @@ export default class Calculator {
     return x + y;
   }
   subtract(x, y) {
-    return y - x;
+    return x - y;
   }
   multiply(x, y) {
     return x * y;
