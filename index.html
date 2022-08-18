@@ -6,57 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script defer src="app.js"></script> -->
+    <script defer type="module" src="calculator-class.js"></script>
 </head>
 <body>
     <section class = "main">
         <div class = "calculator">
             <!-- screen -->
-            <!-- <p class="screen">234234243</p> -->
-            <input type="text">
+            <p class="screen"></p>
 
             <!-- first button row -->
             <div class="row-1">
                 <button id="clearBtn" class="btns-1">AC</button>
-                <button class="btn-1">DEL</button>
-                <button class="btn-1">/</button>
+                <button class="btn-1" id="btn-delete"=>DEL</button>
+                <button class="btn-1 operator-btn">/</button>
             </div>
 
             <!-- second button row -->
             <div class="row-2">
-                <button class="btns-2">1</button>
-                <button class="btns-2">2</button>
-                <button class="btns-2">3</button>
-                <button class="btns-2">*</button>
+                <button class="numericButton btns-2 row-btn">1</button>
+                <button class="numericButton btns-2 row-btn">2</button>
+                <button class="numericButton btns-2 row-btn">3</button>
+                <button class=" btns-2 operator-btn row-btn">*</button>
             </div>
 
             <!-- third button row -->
             <div class="row-3">
-                <button class="btns-3">4</button>
-                <button class="btns-3">5</button>
-                <button class="btns-3">6</button>
-                <button class="btns-3">+</button>
+                <button class="numericButton btns-3 row-btn">4</button>
+                <button class="numericButton btns-3 row-btn">5</button>
+                <button class="numericButton btns-3 row-btn">6</button>
+                <button class="btns-3 operator-btn row-btn">+</button>
             </div>
 
 
             <!-- the fourth button row -->
             <div class="row-4">
-                <button class="btns-4">7</button>
-                <button class="btns-4">8</button>
-                <button class="btns-4">9</button>
-                <button class="btns-4">-</button>
+                <button class="numericButton btns-4 row-btn">8</button>
+                <button class="numericButton btns-4 row-btn">9</button>
+                <button class="numericButton btns-4 row-btn">7</button>
+                <button class="btns-4 operator-btn row-btn">-</button>
             </div>
 
 
             <!-- the last row -->
             <div class="row-5">
-                <button class="btns-5">.</button>
-                <button class="btns-5">0</button>
-                <button class="btns-5">=</button>
+                <button class="numericButton btns-5">.</button>
+                <button class="numericButton btns-5">0</button>
+                <button class="btns-5" id="eql-btn">=</button>
             </div>
 
         </div>
     </section>
 
-    <script src="index.js"></script>
+    
 </body>
 </html>
